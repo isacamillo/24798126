@@ -6,7 +6,7 @@ int main() {
     printf("Digite o número de visitantes que entraram hoje: ");
     scanf("%d", &visitantes);
 
-    printf("Número de visitantes registrados com sucesso: %d\n", visitantes);
+    printf("Número de visitantes registrados: %d\n", visitantes);
 
     return 0;
 }
