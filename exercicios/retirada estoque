@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(){
+    int produto, quantidade, estoque, farinha, chocolate, fubá;
+    farinha = 20;
+    fubá = 17;
+    chocolate = 25;
+    
+    printf("Farinha = 1\n Fubá= 2\n Chocolate = 3\n Insira o código do produto desejado: ");
+    scanf("%d", &produto);
+    printf("Insira a quantidade desejada: ");
+    scanf("%d", &quantidade);
+    
+    switch(produto){
+        case 1:
+        estoque = farinha;
+            break;
+        case 2:
+        estoque = fubá;
+            break;
+        case 3:
+        estoque = chocolate;
+            break;
+    }
+    
+    if(quantidade<=estoque){
+    printf("Retirada com sucesso!");
+    estoque - quantidade;
+    }
+    
+    else printf("Quantidade indisponível no estoque!");
+    
+
+    return 0;
+}
