@@ -1,0 +1,41 @@
+// questao a
+
+#include <stdio.h>
+
+int main() {
+    long n = 4000000000;
+    printf("%ld\n", n);
+    return 0;
+}
+
+// questao b
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    a = 10;
+    printf("%d\n", a);
+    return 0;
+}
+
+// questao c
+
+#include <stdio.h>
+
+int main() {
+    printf("%d", 4);
+    printf("%d\n", 2);
+    return 0;
+}
+
+// questao d
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d", &a);
+    printf("%d\n", a);
+    return 0;
+}
