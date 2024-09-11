@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    float p1 = 24.13, p2 = 11.00, p3 = 38.65;
+    float d1 = 17.00, d2 = 35.00, d3 = 25.00;
+    float aporte = 1000.00;
+    int q1, q2, q3;
+    float va1, va2, va3;
+    float dy1, dy2, dy3;
+
+    printf("Quantidade de ações 1: ");
+    scanf("%d", &q1);
+    printf("Quantidade de ações 2: ");
+    scanf("%d", &q2);
+    printf("Quantidade de ações 3: ");
+    scanf("%d", &q3);
+
+    va1 = q1 * p1;
+    va2 = q2 * p2;
+    va3 = q3 * p3;
+
+    if (va1 + va2 + va3 > aporte) {
+        printf("Valor total excede R$1000,00. Ajuste as quantidades.\n");
+        return 1;
+    }
+
+    dy1 = (d1 / p1) * 100;
+    dy2 = (d2 / p2) * 100;
+    dy3 = (d3 / p3) * 100;
+
+    printf("DY Ação 1: %.2f%%\n", dy1);
+    printf("DY Ação 2: %.2f%%\n", dy2);
+    printf("DY Ação 3: %.2f%%\n", dy3);
+
+    return 0;
+}
