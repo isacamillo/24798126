@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    int produto, quantidade;
+    const char *nome;
+
+    printf("Farinha = 1\n Fubá= 2\n Chocolate = 3\n Insira o código do produto: ");
+    scanf("%d", &produto);
+    printf("Insira a quantidade disponível: ");
+    scanf("%d", &quantidade);
+
+    if(quantidade<10){
+        printf("O estoque desse produto está baixo!");
+    }
+    else if (quantidade<=40){
+        printf("O estoque desse produto está médio!");
+    }
+    else{
+        printf("O estoque desse produto está alto!");
+    }
+
+return 0;
+}
