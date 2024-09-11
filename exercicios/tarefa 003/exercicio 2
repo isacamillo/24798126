@@ -12,12 +12,89 @@ int main() {
 
 //questao b
 
+#include <stdio.h>
+
+int main() {
+    char nome[50];
+    printf("Olá eu sou o Nº 1, como é seu nome? ");
+    scanf("%s", nome);
+    printf("Bem-vindo ao clube %s\n", nome);
+    return 0;
+}
+
 //questao c
+
+#include <stdio.h>
+
+int main() {
+    char nome[50];
+    int idade, dias_de_vida;
+
+    printf("Qual é o seu nome? ");
+    scanf("%s", nome);
+    
+    printf("Qual é a sua idade? ");
+    scanf("%d", &idade);
+
+    dias_de_vida = idade * 365;
+    
+    printf("%s, você já viveu aproximadamente %d dias.\n", nome, dias_de_vida);
+    return 0;
+}
 
 //questao d
 
+#include <stdio.h>
+
+int main() {
+    float raio, area;
+    const float PI = 3.14159;
+
+    printf("Digite o raio do círculo: ");
+    scanf("%f", &raio);
+
+    area = PI * raio * raio;
+
+    printf("A área do círculo é: %.2f\n", area);
+    return 0;
+}
+
 //questao e
+
+#include <stdio.h>
+
+int main() {
+    float largura, altura, area, litros_tinta;
+    int latas_tinta;
+
+    printf("Digite a largura da parede em metros: ");
+    scanf("%f", &largura);
+
+    printf("Digite a altura da parede em metros: ");
+    scanf("%f", &altura);
+
+    area = largura * altura;
+    litros_tinta = area * 0.3;  // 300 ml = 0.3 litros por metro quadrado
+    latas_tinta = (int)(litros_tinta / 2) + (litros_tinta > (int)(litros_tinta / 2) * 2 ? 1 : 0);  // Cada lata tem 2 litros
+
+    printf("Você vai precisar de %d latas de tinta.\n", latas_tinta);
+    return 0;
+}
 
 //questao f
 
-//questao g
+#include <stdio.h>
+
+int main() {
+    float fahrenheit, celsius;
+
+    printf("Digite a temperatura em Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+
+    celsius = (5.0 / 9.0) * (fahrenheit - 32);
+
+    printf("A temperatura em Celsius é: %.2f\n", celsius);
+    return 0;
+}
+
+
